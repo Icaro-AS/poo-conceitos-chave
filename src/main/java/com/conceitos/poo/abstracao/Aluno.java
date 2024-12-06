@@ -1,6 +1,8 @@
 package com.conceitos.poo.abstracao;
 
-public class Aluno {
+import com.conceitos.poo.interfaces.Avaliavel;
+
+public class Aluno implements Avaliavel {
     private String nome;
     private int idade;
     private String matricula;
@@ -41,5 +43,9 @@ public class Aluno {
                 "nome='" + nome + '\'' +
                 ", idade=" + idade +
                 ", matricula='" + matricula + '\'';
+    }
+
+    public double avaliarNotaFinal(double nota1, double nota2){
+        return (nota1 + nota2) / 2;
     }
 }
