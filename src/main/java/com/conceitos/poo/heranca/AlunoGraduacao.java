@@ -1,4 +1,5 @@
 package com.conceitos.poo.heranca;
+
 import com.conceitos.poo.abstracao.Aluno;
 
 public class AlunoGraduacao extends Aluno {
